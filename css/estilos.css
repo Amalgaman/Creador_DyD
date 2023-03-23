@@ -1,0 +1,293 @@
+body{
+    background-image: url("../img/hoja.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    margin: 0rem;
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    font-family: 'Marcellus SC', serif;
+   
+}
+h2{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    
+}
+h3{
+    font-family: 'Roboto', sans-serif;
+
+}
+h4{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+.navbar-dark,.dropdown-menu-dark{
+    background-color: #4b360f;
+}
+footer{
+    background-color: #242527;
+    color: #f9f4ef;
+}
+footer ul{
+    list-style: none;
+    padding: 0%;
+}
+footer a{
+text-decoration: none;
+color: #f9f4efd3;
+
+}
+footer a:hover{
+    color: #f9f4ef;
+}
+
+#intro{
+    background-image: url("../img/intro.jpg");
+    background-size: cover;
+    min-height: 100%;
+    background-position: center;
+}
+
+#intro>div{
+background-color: rgba(0, 0, 0, 0.4);
+color: rgba(255, 255, 255, 0.96);
+}
+#intro::-webkit-scrollbar {
+    display: none;
+}
+
+.parrafo{
+    padding:1.875rem;
+    background-color:white;
+}
+.carta{
+    background-color: #8c7851; 
+    color: #f9f4ef;
+    height:80vh;
+}
+
+.carta.barba{
+    background-color: rgb(253, 119, 78);
+}
+.carta.bar{
+    background-color: rgb(228, 146, 224);
+}
+.carta.bru{
+    background-color: rgb(168, 135, 231);
+}
+.carta.cleri{
+    background-color: rgb(185, 187, 199);
+}
+.carta.dru{
+    background-color: rgb(171, 207, 105);
+}
+.carta.explo{
+    background-color: rgb(98, 175, 95);
+}
+.carta.guer{
+    background-color: rgb(168, 138, 83);
+}
+.carta.hechi{
+    background-color: rgb(209, 63, 63);
+}
+.carta.mag{
+    background-color: rgb(105, 152, 252);
+}
+.carta.mon{
+    background-color: rgb(109, 201, 218);
+}
+.carta.pala{
+    background-color: rgb(248, 222, 73);
+}
+.carta.pica{
+    background-color: rgb(135, 131, 139);
+}
+.carta .descripcion{ 
+    color: #020826;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 80%;
+}
+.figura{
+    max-width: 32.5rem;
+}
+.menu{
+    background-color: blueviolet;
+}
+
+.clase{
+    display: none;
+}
+#barbaro:target {
+    display: block !important;
+}
+#bardo:target {
+    display: block !important;
+}
+#brujo:target {
+    display: block !important;
+}
+#clerigo:target {
+    display: block !important;
+}
+#druida:target {
+    display: block !important;
+}
+#explorador:target {
+    display: block !important;
+}
+#guerrero:target {
+    display: block !important;
+}
+#hechicero:target {
+    display: block !important;
+}
+#mago:target {
+    display: block !important;
+}
+#monje:target {
+    display: block !important;
+}
+#paladin:target {
+    display: block !important;
+}
+#picaro:target {
+    display: block !important;
+}
+#lateral{
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    overflow-y: scroll; 
+    padding-top: 56px;
+}
+.selector.btn{
+    position: fixed;
+    right:3%;
+    bottom: 3%;
+    z-index: 3;
+}
+#lateral .list-group-item{
+    background-color: #4b360f; 
+}
+.list-group-item>a{
+    text-decoration: none;
+    color: white;
+}
+.list-group-item:hover{
+    background-color: #8c7851; 
+}
+#lateral::-webkit-scrollbar {
+    display: none;
+}
+
+
+#superior a{
+    min-width: 60px;
+    min-height: 60px;
+}
+table{
+    background-color:rgb(255, 255, 255) ;
+    min-width: 62.5rem;
+}
+.btn-secondary{
+    background-color:rgb(230, 23, 64);
+}
+.btn-secondary:hover{
+    background-color:#f25042;
+}
+.modal-body{
+text-align: left;
+}
+textarea{
+    height: 14rem;
+}
+.formu{
+    background-color: #ffffffd0;
+    color: #716040;
+    color:#020826;
+}
+
+body.formulario{
+    background-image: url("../img/dndwallpaper.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+body.galeria{
+    background-image: url("../img/hoja.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.card{
+    background-size: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.card-body{
+    background-color: #8c7851d7;
+    color:white
+}
+.colapso{
+    text-decoration: none;
+}
+.colapso>h5{
+    color:white;
+    background-color: #8c7851d7;
+    margin: 0;
+}
+.mapa{
+    background-image: url(../img/mapa.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 60vh;
+  
+}
+h1.mensaje{
+    font-size: 13rem;
+}
+h1.mensaje.d-lg-none{
+    font-size: 8rem;
+}
+h2.mensaje{
+    font-size: 2rem;
+}
+.trozo1{
+    height: 10vh;
+    position: relative;
+    top: 3rem;
+    left: 20%;
+}
+.trozo2{
+    height: 10vh;
+    position: relative;
+    top: 4rem;
+    left: 25%;
+}
+.trozo3{
+    height: 10vh;
+    position: relative;
+    top: 7rem;
+    left: 20%;
+}
+.trozo4{
+    height: 10vh;
+    position: relative;
+    top: 10.5rem;
+    right: 35%;
+}
+.trozo5{
+    height: 10vh;
+    position: relative;
+    top: 12rem;
+    left: 20%;
+}
+
+

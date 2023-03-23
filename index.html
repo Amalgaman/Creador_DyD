@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creador de Personajes D&D</title>
+    <!-- Fuentes Importadas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,700&family=Lato:wght@700&family=Marcellus+SC&family=Roboto:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="icon" type="image/png" href="img/favicon.png"/>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand p-0 mx-2" href="#">
+            <img src="img/iconos/iconodyd.png" alt="" width="40" height="38">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Razas
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="src/razas.html#enano">Enanos</a></li>
+                      <li><a class="dropdown-item" href="src/razas.html#elfo">Elfos</a></li>
+                      <li><a class="dropdown-item" href="src/razas.html#mediano">Medianos</a></li>
+                      <li><a class="dropdown-item" href="src/razas.html#humano">Humanos</a></li>
+                      <li><a class="dropdown-item" href="src/razas.html#draconido">Draconidos</a></li>
+                      <li><a class="dropdown-item" href="src/razas.html#gnomo">Gnomos</a></li>
+                      <li><a class="dropdown-item" href="src/razas.html#semielfo">Semielfos</a></li>
+                      <li><a class="dropdown-item" href="src/razas.html#semiorco">Semiorcos</a></li>
+                      <li><a class="dropdown-item" href="src/razas.html#tiflin">Tiflins</a></li>
+                    </ul>
+                  </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Clases
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="src/clases.html#barbaro">Barbaro</a></li>
+                  <li><a class="dropdown-item" href="src/clases.html#bardo">Bardo</a></li>
+                  <li><a class="dropdown-item" href="src/clases.html#brujo">Brujo</a></li>
+                  <li><a class="dropdown-item" href="src/clases.html#clerigo">Clerigo</a></li>
+                  <li><a class="dropdown-item" href="src/clases.html#druida">Druida</a></li>
+                  <li><a class="dropdown-item" href="src/clases.html#explorador">Explorador</a></li>
+                  <li><a class="dropdown-item" href="src/clases.html#guerrero">Guerrero</a></li>
+                  <li><a class="dropdown-item" href="src/clases.html#hechicero">Hechicero</a></li>
+                  <li><a class="dropdown-item" href="src/clases.html#mago">Mago</a></li>
+                  <li><a class="dropdown-item" href="src/clases.html#monje">Monje</a></li>
+                  <li><a class="dropdown-item" href="src/clases.html#paladin">Paladin</a></li>
+                  <li><a class="dropdown-item" href="src/clases.html#picaro">Picaro</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="src/formulario.html">Crear Personaje</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="src/galeria.html">Ilustraciones</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container-fluid">
+       <div class="row vh-100 mb-3 overflow-scroll" id="intro">
+            <div class="col-lg-6 py-3 ">
+                
+                <h1 class="mx-md-5 mt-3">Creador de personajes</h1>
+                <img class="mx-auto img-fluid px-md-5" src="img/Dungeons-and-Dragons-Logo.png" alt="" width="925" height="351">
+                <h2 class="mx-md-5">Tu eres el protagonista</h2>
+                <p class="mx-md-5">Faerun es un mundo magico lleno de aventuras por vivir y rincones por explorar.
+                   Crea y encarna tu propio personaje, elige su clase, su aspecto y escribe su historia.
+                   Descubre las diferentes razas que habitan los Reinos Olvidados, aprende sobre las
+                   diferentes profesiones y crea el aventurero de tus sueños.
+                   ¿Que estas esperando?
+                </p>
+                <div class="d-flex">
+                <a class="btn btn-danger btn-lg mx-auto my-3" href="#carouselRazas" role="button">Comenzar</a>
+                </div>
+            </div>
+     </div>
+    </div>
+    
+    <div id="carouselRazas" class="carousel carousel-light slide pt-5" data-bs-ride="true">
+      <h1 class="text-center mb-3">Conoce las Razas</h1>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselRazas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselRazas" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselRazas" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselRazas" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselRazas" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselRazas" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselRazas" data-bs-slide-to="6" aria-label="Slide 7"></button>
+        <button type="button" data-bs-target="#carouselRazas" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        <button type="button" data-bs-target="#carouselRazas" data-bs-slide-to="8" aria-label="Slide 9"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container overflow-hidden">
+            <div class="row carta ">
+              
+                <div class="col-lg-6 p-5">
+                  <div class="float-end d-block d-md-none w-50">
+                  <img  class="shadow img-fluid" src="img/figuras/enaninrecuadro.png" alt="Retrato de Enano" width="658" height="658">
+                </div>
+                
+                  <h2>Enanos</h2>
+                  <p class="py-4">Los enanos son sólidos y duraderos como sus amadas
+                    montañas, capeando el paso de los siglos con estoica resistencia y poco cambio. Respetan las tradiciones de sus clanes,
+                    siguiendo su linaje hasta la fundación de sus más antiguas
+                    fortalezas en la juventud del mundo, y sin abandonarlas.</p>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                    <a class="btn btn-outline-light text-center" href="src/razas.html#enano" role="button">Ver mas</a>
+                  
+                  </div>
+                </div>
+                <div class="col-lg-6 d-none d-md-block h-100 text-center">
+                  <img src="img/figuras/enanin.png" class=" h-100 w-auto" alt="Ilustracion de Enano" width="659" height="772">
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row carta">
+              
+                <div class="col-lg-6 p-5">
+                  <div class="float-end d-block d-md-none w-50">
+                  <img  class="shadow img-fluid" src="img/figuras/elforecuadro.png" alt="Retrato de Elfo" width="160" height="160">
+                </div>
+                  <h2>Elfos</h2>
+                  <p class="py-4">Los elfos son un pueblo mágico de gracia sobrenatural, viviendo en el mundo sin ser del todo parte de él. Viven en lugares de etérea belleza, en medio de antiguos bosques o en
+                    plateados minaretes que resplandecen con luz feérica.</p>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                    <a class="btn btn-outline-light text-center" href="src/razas.html#elfo" role="button">Ver mas</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-md-block h-100 text-center">
+                  <img src="img/figuras/elfo.png" class="h-100 w-auto" alt="ilustracion de Elfo" width="476" height="1024">
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row carta">
+              
+                <div class="col-lg-6 p-5">
+                  <div class="float-end d-block d-md-none w-50">
+                  <img  class="shadow img-fluid" src="img/figuras/medianarecuadro.png" alt="Retrato de Mediana" width="198" height="198">
+                </div>
+                  <h2>Medianos</h2>
+                  <p class="py-4">Los medianos sobreviven en un mundo lleno de criaturas más
+                    grandes evitando ser detectados o, si eso no es posible, evitando los problemas. Les encanta descubrir cosas nuevas, incluso las más simples, algo como una comida
+                    exótica o un nuevo estilo de vestimentas</p>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                    <a class="btn btn-outline-light text-center" href="src/razas.html#mediano" role="button">Ver mas</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-md-block h-100 text-center">
+                  <img src="img/figuras/mediana.png" class="h-100 w-auto" alt="Ilustracion de Mediana" width="594" height="752">
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row carta">
+              
+                <div class="col-lg-6 p-5">
+                  <div class="float-end d-block d-md-none w-50">
+                  <img  class="shadow img-fluid" src="img/figuras/humanorecuadro.png" alt="Retrato de Humano" width="268" height="268">
+                </div>
+                  <h2>Humanos</h2>
+                  <p class="py-4">En el cómputo de la mayoría de los mundos, los humanos son
+                    la más joven de las razas comunes, con una llegada tardía al
+                    mundo y una vida corta en comparación con los enanos, elfos,
+                    y dragones. Quizás es por su corta vida que se esfuerzan en
+                    conseguir tanto como pueden en los años que se les han dado.</p>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                    <a class="btn btn-outline-light text-center" href="src/razas.html#humano" role="button">Ver mas</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-md-block h-100 text-center">
+                  <img src="img/figuras/humano.png" class="h-100 w-auto" alt="Ilustracion de Humano" width="499" height="755">
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row carta">
+              
+                <div class="col-lg-6 p-5">
+                  <div class="float-end d-block d-md-none w-50">
+                  <img  class="shadow img-fluid" src="img/figuras/draconidorecuadro.png" alt="Retrato de Draconido" width="324" height="324">
+                </div>
+                  <h2>Draconidos</h2>
+                  <p class="py-4">Nacido de los dragones, como su nombre proclama, el dracónido camina orgulloso a través de un mundo que le recibe
+                    lleno de miedo e incomprensión. Modelado por los dioses
+                    dracónidos o por los dragones mismos, el dracónido originalmente nacía de huevos de dragón como una raza única.</p>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                    <a class="btn btn-outline-light text-center" href="src/razas.html#draconido" role="button">Ver mas</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-md-block h-100 text-center">
+                  <img src="img/figuras/draconido2.png" class="h-100 w-auto" alt="Ilustracion de Draconido" width="698" height="1144">
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row carta">
+              
+                <div class="col-lg-6 p-5">
+                  <div class="float-end d-block d-md-none w-50">
+                  <img  class="shadow img-fluid" src="img/figuras/gnomarecuadro.png" alt="Retrato de Gnoma" width="268" height="268">
+                </div>
+                  <h2>Gnomos</h2>
+                  <p class="py-4">Los gnomos se toman la
+                    vida con deleite, disfrutando cada momento de invención, exploración, investigación, creación y juego.
+                    La personalidad de un gnomo se ve muy reflejada en su
+                    apariencia. La energía y entusiasmo de un gnomo por la vida brilla a través de cada pulgada de su pequeño cuerpo.</p>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                    <a class="btn btn-outline-light text-center" href="src/razas.html#gnomo" role="button">Ver mas</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-md-block h-100 text-center">
+                  <img src="img/figuras/gnoma.png" class="h-100 w-auto" alt="Ilustracion de Gnoma" width="550" height="750">
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row carta">
+              
+                <div class="col-lg-6 p-5">
+                  <div class="float-end d-block d-md-none w-50">
+                  <img  class="shadow img-fluid" src="img/figuras/semielfarecuadro.png" alt="Retrato de Semielfa" width="231" height="231">
+                </div>
+                  <h2>Semielfos</h2>
+                  <p class="py-4">Caminando entre dos mundos pero sin pertenecer realmente
+                    a ninguno de los dos, los semielfos combinan lo que algunos
+                    dicen ser las mejores cualidades de sus progenitores humanos y elfos: la curiosidad, inventiva y ambición humana templada por los sentidos refinados, el amor por el arte y la naturaleza de los elfos. </p>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                    <a class="btn btn-outline-light text-center" href="src/razas.html#semielfo" role="button">Ver mas</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-md-block h-100 text-center">
+                  <img src="img/figuras/semielfa.png" class="h-100 w-auto" alt="Ilustracion de Semielfa" width="680" height="900">
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row carta">
+              
+                <div class="col-lg-6 p-5">
+                  <div class="float-end d-block d-md-none w-50">
+                  <img  class="shadow img-fluid" src="img/figuras/semiorcarecuadro.png" alt="Retrato de Semiorca" width="200" height="200">
+                </div>
+                  <h2>Semiorcos</h2>
+                  <p class="py-4">Ya sean unidos bajo el liderazgo de un poderoso brujo o luchando para resistir tras años de conflicto, las tribus humanas y orcas a veces forman alianzas, uniendo sus fuerzas en
+                    una horda mayor para el terror de las tierras civilizadas cercanas. Cuando esas alianzas se sellan con matrimonios, nacen los semiorcos.</p>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                    <a class="btn btn-outline-light text-center" href="src/razas.html#semiorco" role="button">Ver mas</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-md-block h-100 text-center">
+                  <img src="img/figuras/semiorca.png" class="h-100 w-auto" alt="Ilustracion de Semiorca" width="820" height="1060">
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container overflow-hidden">
+            <div class="row carta">
+              
+                <div class="col-lg-6 p-5">
+                  <div class="float-end d-block d-md-none w-50">
+                  <img  class="shadow img-fluid" src="img/figuras/tiflinarecuadro.png" alt="Retrato de Tiflin" width="365" height="365">
+                </div>
+                  <h2>Tiflins</h2>
+                  <p class="py-4">Los tiflin derivan de linajes humanos y en el sentido más amplio posible, aún parecen humanos. Sin embargo, su herencia
+                    infernal ha dejado una clara huella en su apariencia. Los tiflin
+                    poseen grandes cuernos que toman cualquier variedad de formas: algunos tienen cuernos curvados como un carnero,
+                    otros tienen cuernos largos y altos como una gacela y otros
+                    suben en espiral como los de los antílopes.</p>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                    <a class="btn btn-outline-light text-center" href="src/razas.html#tiflin" role="button">Ver mas</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-md-block h-100 text-center">
+                  <img src="img/figuras/tiflina.png" class="h-100 w-auto" alt="Ilustracion de Tiflin" width="640" height="900">
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev ms-md-4" type="button" data-bs-target="#carouselRazas" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next me-md-4" type="button" data-bs-target="#carouselRazas" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+    <div id="carouselClases" class="carousel carousel-dark slide pt-5 mb-5" data-bs-ride="true">
+      <h1 class="text-center mb-3">Explora las Clases</h1>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselClases" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselClases" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselClases" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselClases" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselClases" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselClases" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselClases" data-bs-slide-to="6" aria-label="Slide 7"></button>
+        <button type="button" data-bs-target="#carouselClases" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        <button type="button" data-bs-target="#carouselClases" data-bs-slide-to="8" aria-label="Slide 9"></button>
+        <button type="button" data-bs-target="#carouselClases" data-bs-slide-to="9" aria-label="Slide 10"></button>
+        <button type="button" data-bs-target="#carouselClases" data-bs-slide-to="10" aria-label="Slide 11"></button>
+        <button type="button" data-bs-target="#carouselClases" data-bs-slide-to="11" aria-label="Slide 12"></button>
+        
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="carta barba row">
+              <div class="col d-none d-lg-block h-100 text-center">
+                  <img src="img/figuras/barbaro.png" class="h-100 w-auto" alt="Ilustracion de Barbaro" height="540" width="468">
+                </div>
+                <div class="descripcion col p-5" style="background-image: url(img/iconos/iconobarba.png);">
+                  
+                  <h2>Barbaro</h2>
+                  <p class="py-4">Para los bárbaros, la
+                    furia es un poder que no sólo les proporciona un frenesí ciego
+                    en la batalla, sino también extraordinarios reflejos, resistencia y proezas de fuerza.</p>
+                    <div class="d-grid gap-2 col-6 mx-auto mt-5">
+                    <a class="btn btn-outline-dark text-center" href="src/clases.html#barbaro" role="button">Ver mas</a>
+                    </div>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="carta bar row">
+              <div class="col d-none d-lg-block h-100 text-center">
+                  <img src="img/figuras/bardo1.png" class="h-100 w-auto" alt="Ilustracion de Bardo" height="640" width="940">
+                </div>
+                <div class="descripcion col p-5" style="background-image: url(img/iconos/iconobar.png);">
+                  
+                  <h2>Bardo</h2>
+                  <p class="py-4">Ya sea un erudito, un poeta o un canalla, un bardo teje su
+                    magia a través de sus palabras y su música para inspirar a los
+                    aliados, desmoralizar a los enemigos, manipular mentes,
+                    crear ilusiones e incluso sanar heridas.</p>
+                    <div class="d-grid gap-2 col-6 mx-auto mt-5">
+                    <a class="btn btn-outline-dark text-center" href="src/clases.html#bardo" role="button">Ver mas</a>
+                    </div>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="carta bru row">
+              <div class="col d-none d-lg-block h-100 text-center">
+                  <img src="img/figuras/brujo1.png" class="h-100 w-auto" alt="Ilustracion de Brujo" height="800" width="1470">
+                </div>
+                <div class="descripcion col p-5" style="background-image: url(img/iconos/iconobru.png);">
+                  
+                  <h2>Brujo</h2>
+                  <p class="py-4">Los brujos son buscadores del conocimiento que se encuentra escondido en el multiverso. A través de pactos hechos con seres de poder sobrenatural, los brujos
+                    desatan efectos mágicos tanto sutiles como espectaculares. </p>
+                    <div class="d-grid gap-2 col-6 mx-auto mt-5">
+                    <a class="btn btn-outline-dark text-center" href="src/clases.html#brujo" role="button">Ver mas</a>
+                    </div>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="carta cleri row">
+              <div class="col d-none d-lg-block h-100 text-center">
+                  <img src="img/figuras/clerigo2.png" class="h-100 w-auto" alt="Ilustracion de Clerigo" height="665" width="950">
+                </div>
+                <div class="descripcion col p-5" style="background-image: url(img/iconos/iconocleri.png);">
+                  
+                  <h2>Clerigo</h2>
+                  <p class="py-4">Los clérigos son intermediarios entre el mundo mortal y
+                    los distantes planos divinos. Tan diferentes entre ellos como
+                    los dioses a los que sirven, los clérigos se esfuerzan por personificar las obras de sus deidades. No son sacerdotes ordinarios, un clérigo se encuentra imbuido de magia divina.</p>
+                    <div class="d-grid gap-2 col-6 mx-auto mt-5">
+                    <a class="btn btn-outline-dark text-center" href="src/clases.html#clerigo" role="button">Ver mas</a>
+                    </div>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="carta dru row">
+              <div class="col d-none d-lg-block h-100 text-center">
+                  <img src="img/figuras/druida2.png" class="h-100 w-auto" alt="Ilustracion de Druida" height="744" width="1086">
+                </div>
+                <div class="descripcion col p-5" style="background-image: url(img/iconos/iconodru.png);">
+                  
+                  <h2>Druida</h2>
+                  <p class="py-4">Ya sea invocando a las fuerzas elementales o emulando a
+                    las criaturas del mundo animal, los druidas son la personificación de la resistencia, astucia y furia de la naturaleza. Dicen
+                    no tener un dominio sobre la naturaleza. En lugar de eso, se
+                    ven como una extensión de la voluntad indomable de la
+                    misma.</p>
+                    <div class="d-grid gap-2 col-6 mx-auto mt-5">
+                    <a class="btn btn-outline-dark text-center" href="src/clases.html#druida" role="button">Ver mas</a>
+                    </div>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="carta explo row">
+              <div class="col d-none d-lg-block h-100 text-center">
+                  <img src="img/figuras/explorador2.png" class="h-100 w-auto" alt="Ilustracion de Explorador" height="529" width="879">
+                </div>
+                <div class="descripcion col p-5" style="background-image: url(img/iconos/iconoexplo.png);">
+                  
+                  <h2>Explorador</h2>
+                  <p class="py-4">Guerreros de las tierras salvajes, los exploradores se especializan en cazar a los monstruos que acechan en los límites de
+                    la civilización.
+                    Aprenden a rastrear a sus presas como un depredador, moviéndose furtivamente a través de los bosques y escondiéndose entre la maleza y las ruinas</p>
+                    <div class="d-grid gap-2 col-6 mx-auto mt-5">
+                    <a class="btn btn-outline-dark text-center" href="src/clases.html#explorador" role="button">Ver mas</a>
+                    </div>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="carta guer row">
+              <div class="col d-none d-lg-block h-100 text-center">
+                  <img src="img/figuras/guerrero3.png" class="h-100 w-auto" alt="Ilustracion de Guerrero" height="540" width="468">
+                </div>
+                <div class="descripcion col p-5" style="background-image: url(img/iconos/iconoguer.png);">
+                  
+                  <h2>Guerrero</h2>
+                  <p class="py-4">Caballeros en misiones sagradas, conquistadores señores de
+                    la guerra, campeones reales, soldados de élite, duros mercenarios, y reyes bandidos. Como guerreros, todos ellos comparten un dominio magistral de las armas y armaduras, y un
+                    exhaustivo conocimiento de las habilidades del combate. </p>
+                    <div class="d-grid gap-2 col-6 mx-auto mt-5">
+                    <a class="btn btn-outline-dark text-center" href="src/clases.html#guerrero" role="button">Ver mas</a>
+                    </div>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="carta hechi row">
+              <div class="col d-none d-lg-block h-100 text-center">
+                  <img src="img/figuras/hechicero1.png" class="h-100 w-auto" alt="Ilustracion de Hechicero" height="540" width="468">
+                </div>
+                <div class="descripcion col p-5" style="background-image: url(img/iconos/iconohechi.png);">
+                  
+                  <h2>Hechicero</h2>
+                  <p class="py-4">Los hechiceros tienen una magia innata, conferida por
+                    una línea de sangre exótica, una influencia de otro mundo o
+                    la exposición a fuerzas cósmicas desconocidas.
+                    Uno no puede estudiar hechicería como quien estudia un
+                    lenguaje, nadie elige la hechicería, el poder elige al hechicero.</p>
+                    <div class="d-grid gap-2 col-6 mx-auto mt-5">
+                    <a class="btn btn-outline-dark text-center" href="src/clases.html#hechicero" role="button">Ver mas</a>
+                    </div>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="carta mag row">
+              <div class="col d-none d-lg-block h-100 text-center">
+                  <img src="img/figuras/mago3.png" class="h-100 w-auto" alt="Ilustracion de Mago" height="540" width="468">
+                </div>
+                <div class="descripcion col p-5" style="background-image: url(img/iconos/iconomag.png);">
+                  
+                  <h2>Mago</h2>
+                  <p class="py-4">Los magos son los practicantes supremos de la magia, definidos y unidos como una clase por los hechizos que conjuran. A partir de la sutil onda de la magia que impregna el cosmos, los magos lanzan explosivos hechizos de fuego, arcos
+                    voltaicos, sutiles engaños y brutales formas de control mental.</p>
+                    <div class="d-grid gap-2 col-6 mx-auto mt-5">
+                    <a class="btn btn-outline-dark text-center" href="src/clases.html#mago" role="button">Ver mas</a>
+                    </div>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="carta mon row">
+              <div class="col d-none d-lg-block h-100 text-center">
+                  <img src="img/figuras/monje1.png" class="h-100 w-auto" alt="Ilustracion de Monje" height="540" width="468">
+                </div>
+                <div class="descripcion col p-5" style="background-image: url(img/iconos/iconomon.png);">
+                  
+                  <h2>Monje</h2>
+                  <p class="py-4">Cualquiera que sea su disciplina, los monjes están unidos
+                    por su habilidad para utilizar mágicamente la energía que corre por sus cuerpos. Ya sea canalizada en una impactante demostración de proeza marcial o en el sutil enfoque en la habilidad defensiva y la velocidad.</p>
+                    <div class="d-grid gap-2 col-6 mx-auto mt-5">
+                    <a class="btn btn-outline-dark text-center" href="src/clases.html#monje" role="button">Ver mas</a>
+                    </div>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="carta pala row">
+              <div class="col d-none d-lg-block h-100 text-center">
+                  <img src="img/figuras/paladin1.png" class="h-100 w-auto" alt="Ilustracion de Paladin" height="540" width="468">
+                </div>
+                <div class="descripcion col p-5" style="background-image: url(img/iconos/iconopala.png);">
+                  
+                  <h2>Paladin</h2>
+                  <p class="py-4">Sean cuales sean sus orígenes y sus misiones, los paladines están unidos por sus juramentos para luchar en contra de
+                    las fuerzas del mal.  El juramento de un paladín es un lazo muy poderoso, una fuente de poder que convierte a un devoto guerrero en
+                    un campeón bendecido. </p>
+                    <div class="d-grid gap-2 col-6 mx-auto mt-5">
+                    <a class="btn btn-outline-dark text-center" href="src/clases.html#paladin" role="button">Ver mas</a>
+                    </div>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="carta pica row">
+              <div class="col d-none d-lg-block h-100 text-center">
+                  <img src="img/figuras/picaro2.png" class="h-100 w-auto" alt="Ilustracion de Picaro" height="540" width="468">
+                </div>
+                <div class="descripcion col p-5" style="background-image: url(img/iconos/iconopica.png);">
+                  
+                  <h2>Picaro</h2>
+                  <p class="py-4">Los pícaros confían sus habilidades, el sigilo y las vulnerabilidades de sus oponentes para lograr sacar ventaja en
+                    cualquier situación. Tienen un don para encontrar la solución
+                    a prácticamente cualquier problema, demostrando un ingenio y versatilidad.</p>
+                    <div class="d-grid gap-2 col-6 mx-auto mt-5">
+                    <a class="btn btn-outline-dark text-center" href="src/clases.html#picaro" role="button">Ver mas</a>
+                    </div>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <button class="carousel-control-prev " type="button" data-bs-target="#carouselClases" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselClases" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div> 
+          
+                
+  <footer class="container-fluid p-5 pb-0">
+     <div class="row">
+      <div class="col-md-4">
+       <h2 class="border-bottom">Creador de Personajes de D&D</h2>
+       <p>Todo el contenido pertenece a Dungeons & Dragons y Wizards of the Coast</p>
+       <a href="https://dnd.wizards.com/es" target="_blank">Visitar sitio oficial</a>
+       <p>
+        
+    </p>
+
+      </div>
+      <div class="col-md-8 text-center">
+        <h2 class="border-bottom">enlaces de respaldo</h2>
+        <div class="row">
+          <div class="col">
+            <h4 class="border-bottom">Principales</h4>
+          <ul>
+            <li><a  href="index.html">Inicio</a></li>
+            <li><a  href="src/formulario.html">Crear Personaje</a></li>
+            <li><a  href="src/galeria.html">Ilustraciones</a></li>
+            <li><a  href="src/error.html">404</a></li>
+          </ul>
+         </div>
+         <div class="col">
+          <h4 class="border-bottom">Razas</h4>
+          <div class="row">
+            <div class="col">
+              <ul>
+                <li><a  href="src/razas.html#enano">Enanos</a></li>
+                <li><a  href="src/razas.html#elfo">Elfos</a></li>
+                <li><a  href="src/razas.html#mediano">Medianos</a></li>
+                <li><a  href="src/razas.html#humano">Humanos</a></li>
+                <li><a  href="src/razas.html#draconido">Draconidos</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul>
+                <li><a  href="src/razas.html#gnomo">Gnomos</a></li>
+                <li><a  href="src/razas.html#semielfo">Semielfos</a></li>
+                <li><a  href="src/razas.html#semiorco">Semiorcos</a></li>
+                <li><a  href="src/razas.html#tiflin">Tiflins</a></li>
+              </ul>
+            </div>
+          </div>
+         </div>
+         <div class="col">
+          <h4 class="border-bottom">Clases</h4>
+          <div class="row">
+            <div class="col">
+              <ul>
+            <li><a  href="src/clases.html#barbaro">Barbaro</a></li>
+            <li><a  href="src/clases.html#bardo">Bardo</a></li>
+            <li><a  href="src/clases.html#brujo">Brujo</a></li>
+            <li><a  href="src/clases.html#clerigo">Clerigo</a></li>
+            <li><a  href="src/clases.html#druida">Druida</a></li>
+            <li><a  href="src/clases.html#explorador">Explorador</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul>
+                <li><a  href="src/clases.html#guerrero">Guerrero</a></li>
+                <li><a  href="src/clases.html#hechicero">Hechicero</a></li>
+                <li><a  href="src/clases.html#mago">Mago</a></li>
+                <li><a  href="src/clases.html#monje">Monje</a></li>
+                <li><a  href="src/clases.html#paladin">Paladin</a></li>
+                <li><a  href="src/clases.html#picaro">Picaro</a></li>
+              </ul>
+            </div>
+          </div>
+
+         </div>
+         
+        </div>  
+      </div>
+      <div class="row">
+          <div class="col text-center border-top">
+            <p>Trabajo realizado por Ignacio Javier Sagnella</p>
+            <p>Escuela Da Vinci</p>
+            <p>Materia: Programacion Web I</p>
+            <p>Carrera: Analista de Sistemas</p>
+            <p>Comision: 22.1.ACPWI</p>
+          </div>
+        </div>
+     </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+</body>
+    
+
+</html>
